@@ -1,47 +1,35 @@
 @import url('../main.css');
 
-.header-title-container{
+.header-title-container {
   display: flex;
   align-items: center;
-  margin: 20px auto 20px auto;
+  margin: 20px auto;
   width: 100%;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
 }
 
-
-
-.left-section{
+.left-section {
   width: 500px;
   font-family: 'peach-thin';
   padding-left: 20px;
-  
   height: 70px;
   display: flex;
   align-items: center;
 }
 
-/*.center-logo{
-  width: 200px;
-  height: 50px;
-}
-
-.logo-image{
-  width: 50%;
-}*/
-
-.right-section{
-  width:500px;
+.right-section {
+  width: 500px;
   font-family: 'peach-thin', sans-serif;
   display: flex;
   justify-content: end;
-  
+  position: relative;
   padding-right: 20px;
   height: 70px;
   align-items: center;
 }
 
-.right-section button{
+.right-section button {
   width: 50px;
   height: 50px;
   border-radius: 50px;
@@ -50,54 +38,62 @@
   cursor: pointer;
   transition: all 0.3s;
   position: relative;
-  }
-
-.right-section button:hover{
-  box-shadow: 0px 2px var(--second-background-color);
   background-color: var(--main-color);
-  color: white;
+  color: var(--text-white);
 }
 
-.right-section a{
+.right-section button:hover {
+  box-shadow: 0px 2px var(--second-background-color);
+  background-color: var(--hover-color);
+  color: var(--text-white);
+}
+
+.right-section a {
   font-family: 'peach-thin', sans-serif;
   padding: 10px;
   display: block;
   border: 1px solid var(--second-background-color);
-  
   border-collapse: separate;
   border-spacing: 0;
 }
 
-.right-section .profile-content{
+.profile-content {
   position: absolute;
   min-width: 70px;
-  top: 90px;
-  right: 135px;
   background-color: var(--hover-color);
+  top: 70px;
+  right: 0px;
+  display: none;
 }
-.main-logo{
+
+.js-enable-profile {
+  display: initial;
+}
+
+.main-logo {
   max-width: 1000px;
   width: 1000px;
 }
 
-.left-section img{
+.left-section img {
   height: 40px;
 }
 
-.navigation-section{
+.navigation-section {
   display: flex;
   justify-content: center;
   margin-top: 20px;
   margin-bottom: 20px;
 }
-.nav-list{
-  display:flex;
+
+.nav-list {
+  display: flex;
   list-style-type: none;
   justify-content: space-evenly;
   width: 1000px;
 }
 
-.nav-list li a{
+.nav-list li a {
   font-family: 'peach-thin', sans-serif;
   transition: all 1s ease;
   cursor: pointer;
