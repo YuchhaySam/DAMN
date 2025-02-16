@@ -1,5 +1,4 @@
-
-*{
+* {
   box-sizing: border-box;
   font-family: 'peach-regular', sans-serif;
 }
@@ -27,16 +26,19 @@
   --text-white: white;
 }
 
-
-header{
-  max-width: 1000px;
-}
-
 body, html {
   height: 100%;
   margin: 0;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   background-color: var(--background-color);
+}
+
+header, main, footer {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
