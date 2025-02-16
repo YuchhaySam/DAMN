@@ -1,5 +1,15 @@
 @import url('../main.css');
 
+header {
+  position: fixed;
+  top: 0;
+  left: auto;
+  right: auto;
+  background-color: var(--background-color);
+  height: 180px;
+  z-index: 1000;
+}
+
 .header-title-container {
   display: flex;
   align-items: center;
